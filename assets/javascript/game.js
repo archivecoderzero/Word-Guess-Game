@@ -1,9 +1,10 @@
 //Variables for the game :
 
 //
-var library = ["tesla","password","metalgear","apple" ,"popstar" ,"escapethefate","golf","qwerty" ,"ThiSisMypasswoRdyeah1?NohackzPlz>" , "king"];
+var library = ["tesla","password","metalgear","apple" ,"popstar" ,"escapethefate","golf","qwerty" ,"ThiSisMypasswoRdz>" , "king"];
 var namer = ["Morpheus" , "Cypher" , "Oracle" , "Neo" , "Trinity"]
 var clueUser = ["Elon Musk" , "Mark Zuckerburg", "Hideo Kojima" , "Tim Cook" , "Ariana Grande", "Ronnie Radke" , "Tiger Woods" , "Donald Trump","John R Chavez" , "Elvis Presley"]
+var asterisk = [];
 var lettersInPicked = [];
 var pickedWord = [];
 var numberOfAster = 0;
@@ -22,6 +23,7 @@ function startGame() {
     //ingame variable stats starts at this
     picksLeft = 10;
     wrongPicks = [];
+    asterisk = [];
 
     randomNumber = Math.floor(Math.random() * library.length);
     //select a random word from [library]
@@ -50,6 +52,7 @@ function startGame() {
 
     //after populating the pickedWord with number of asterisk  , set the game scores by modify the html file to reflect "game start"
     document.getElementById("passWord").innerHTML = asterCorrectPicks.join("");
+    document.getElementById("passWord1").innerHTML = asterisk.join("");
     document.getElementById("attemptsLeft").innerHTML = picksLeft;
     document.getElementById("winCounter").innerHTML = wins;
     document.getElementById("lossCounter").innerHTML = loss;
@@ -99,6 +102,7 @@ function checker(letter) {
 }
 
 
+
 //create a function to determine if the user wins or loss already
 function roundChecker() { 
 
@@ -126,7 +130,7 @@ function roundChecker() {
 //Reset the html back to gamestart variables
     document.getElementById("attemptsLeft").innerHTML = picksLeft;
     document.getElementById("passWord").innerHTML = asterCorrectPicks.join("");
-    document.getElementById("passWord").innerHTML = asterCorrectPicks.join("");
+    document.getElementById("passWord1").innerHTML = asterisk.join("");
     document.getElementById("wrongLetters").innerHTML = wrongPicks.join("");
 }
 
@@ -138,9 +142,10 @@ document.getElementById("userName").innerHTML = person + " aka " + randomPrefix;
 
 startGame();
 
-//Detect the key press . 
+//Detect the key press . add asterisk to emulate putting in a passworkd
 document.onkeyup = function (event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checker(letterGuessed);
-    roundChecker();
-}
+    roundChecker();     
+    asterisk.push("*");
+      }
