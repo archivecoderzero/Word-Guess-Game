@@ -1,9 +1,9 @@
 //Variables for the game :
 
 //
-var library = ["tesla","password","mgs"];
+var library = ["tesla","password","metalgear","apple" ,"popstar" ,"escapethefate","golf","qwerty" ,"ThiSisMypasswoRdyeah1?NohackzPlz>" , "king"];
 var namer = ["Morpheus" , "Cypher" , "Oracle" , "Neo" , "Trinity"]
-var clueUser = ["Elon Musk" , "Mark Zuckerburg", "Hideo Kojima"]
+var clueUser = ["Elon Musk" , "Mark Zuckerburg", "Hideo Kojima" , "Tim Cook" , "Ariana Grande", "Ronnie Radke" , "Tiger Woods" , "Donald Trump","John R Chavez" , "Elvis Presley"]
 var lettersInPicked = [];
 var pickedWord = [];
 var numberOfAster = 0;
@@ -106,7 +106,7 @@ function roundChecker() {
     if (lettersInPicked.toString() == asterCorrectPicks.toString()) {
         wins++;
 // Allert message that you win 
-        alert("You Successfully Hacked " )
+        alert("You Successfully Hacked " + clue )
 //Update the win counter in HTML
         document.getElementById("winCounter").innerHTML = wins;
 //Rerun startgame function
@@ -116,7 +116,7 @@ function roundChecker() {
 //If picks left is equal to zero, alert you lose
     else if (picksLeft == 0) {
         loss++;
-        alert("You Lose.");
+        alert("You Failed to hack " + clue );
 
         document.getElementById("lossCounter").innerHTML = loss;
 //Rerun startgame function

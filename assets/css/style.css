@@ -3,10 +3,9 @@
     color : white;
     z-index: -1;
     position: relative;
-    top: -50px;
+    top: -70px;
     width: 100%;
     height: 30px;
-
 }
 
 body {
@@ -71,17 +70,6 @@ top: -50px;
     background: white;
 }
 
-.footercont {
-    clear: both;
-    padding: 5px;
-    background: red;
-    position: relative;
-    bottom:-100px;
-    width:100%;
-    background: #666666;
-    /* background-image: url("https://66.media.tumblr.com/0f611cea0d9752921531ede59adaa978/tumblr_o2eziiORfr1sb5osho1_500.gif"); */
-    border-top: solid 5px blue;
-    }
     .footer {
     text-align: center;
     color: white;
@@ -110,4 +98,24 @@ h4 {
 
 h5 {
     color: white;
+}
+
+#cluePerson {
+    padding: 5px 20px 5px 5px;
+    background: white;
+    color: black;
+    position: relative;
+    bottom: 60px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.welcome {
+    position: relative;
+    left: 23px;
+}
+
+.container.cont {
+   position: relative;
+   top: -35px;
 }
