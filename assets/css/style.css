@@ -1,0 +1,67 @@
+.jumbotron {
+    background : #3b5998;
+    color : white;
+    z-index: -1;
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 30px;
+
+}
+
+body {
+    background : #8b9dc3;
+
+}
+
+.row {
+position: relative;
+top: ;
+}
+
+.header {
+    position: relative;
+    left: -300px;
+
+}
+
+.navbar {
+    background-color: #3b5998;
+    background-image : url(../../assets/images/3.png);
+    font-weight : 700;
+    color: white;
+
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.form-group1{
+    float: left;
+    position: relative;
+    right: 50px;.
+    color: white;
+}
+.form-group{
+    float: left;
+    position: relative;
+    right: 20px
+}
+
+.btn.btn-success {
+    clear: both;
+    position: relative;
+    top: 30px;
+}
+
+
+.col-4.main {
+    background : grey;
+
+}
+
+.passWord {
+    padding: 10px;
+    background: white;
+}

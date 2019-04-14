@@ -1,58 +1,107 @@
-<!doctype html>
-<html lang="en-us">
-   <head>
-      <meta charset="UTF-8">
-      <title>Hack Zuckerburg</title>
-      <link rel="stylesheet" type="text/css" href="assets/css/style.csWs">
-   </head>
-      
-   <body>
-      <header id="header">
-         <div class="container">
-            <h1 id="person">Social Media Hacker</h1>
-         </div>
+<!DOCTYPE html>
+<html lang="en">
 
-      </header>
-      <div class=maincontainer>
-         <div class=subcontainer>
-            <h2 id=> Start Guessing</h2>
+<head>
+    <meta charset="UTF-8">
+    <title>Hackbook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-            <p id=userName> ___ + ___ + ___ + </p>
-            <p id=userPass>___ + ___ + ___</p> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-            <p id=yourGuess> ___</p>
-            <p id=guessLeft> ___</p>
+
+
+<body>
+
+      <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#"></a>
+            <h1 class="header">Hackbook</h1>
+
+            <form>
+                    <div class="form-group1">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Login</button>
+                  </form>
+          </nav>
+        <div class="jumbotron">
+            <h4>Welcome to Hackbook</h4>
+        </div>
+            <div class="row">
+               <div class=col-1></div>
+
+              <div class="col-6">
+                  <img class="rounded float-left" id=mainimg src=assets/images/1.png alt="main_photo" height="100%" width="100%" >
+
+
+                </div>
+                <div class="col-4 main">
+                     <div class="container-fluid">
+                           <div class="content">
+                               <h6>Hacking Software Ver 4.34</h6>
+                           </div>
+                       </div>
+               
+               
+                       <div class="container-fluid">
+                           <div class="content">
+                               <h3>Guess the Password.</h3>
+                               <div class="passWord">
+                                   <h3 id="passWord"></h2>
+                               </div>
+                           </div>
+                       </div>
+               
+                       <div class="container-fluid">
+                           <div class="content">
+                              <h4> Wrong Guesses: <span id="wrongLetters"></span></h4>
+                           </div>
+                       </div>
+               
+                       <div class="container-fluid">
+                           <div class="content">
+                                <h4> Attempts Left: <span id="attemptsLeft"></span></h4>
+                           </div>
+                       </div>
+               
+                       <div class="container-fluid">
+                           <div class="content">
+                                <h4> Successful Hacks: <span id="winCounter"></span></h4>
+                           </div>
+                       </div>
+               
+               
+                       <div class="container-fluid">
+                           <div class="content">
+                                <h4>Failed Hacks: <span id="lossCounter"></span></h4>
+                           </div>
+                       </div>
+               
+               
+                   </div>
+               
+               
+               
+               
+                   </div>
+        
+
+                     
+                   </div>
+
+                   <div class=col-1></div>
 
             </div>
 
-            <div class=footercont>
-                <footer class=footer>
-                   <p>No Copyright</p>
-                </footer>
-             </div>
-            </body>
-            </html>
 
+</body>
 
+<script src="assets/javascript/game.js"></script>
 
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
