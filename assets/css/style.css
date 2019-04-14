@@ -93,5 +93,17 @@ margin: 20px;
     }
 
 #userName {
-    color: green;
+    color: gold;
+}
+
+.row.row1 {
+    background: #3b5998;
+}
+
+#winCounter {
+    color: limegreen;
+}
+
+#lossCounter {
+    color: red;
 }
