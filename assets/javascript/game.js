@@ -1,8 +1,9 @@
 //Variables for the game :
 
 //
-var library = ["test1","test2","test3"];
+var library = ["tesla","password","mgs"];
 var namer = ["Morpheus" , "Cypher" , "Oracle" , "Neo" , "Trinity"]
+var clueUser = ["Elon Musk" , "Mark Zuckerburg", "Hideo Kojima"]
 var lettersInPicked = [];
 var pickedWord = [];
 var numberOfAster = 0;
@@ -22,8 +23,12 @@ function startGame() {
     picksLeft = 10;
     wrongPicks = [];
 
+    randomNumber = Math.floor(Math.random() * library.length);
     //select a random word from [library]
-    pickedWord = library[Math.floor(Math.random() * library.length)];
+    pickedWord = library[randomNumber];
+
+    //give a clue 
+    clue = clueUser[randomNumber];
 
     //empty the array of the blanks and correct picks, 
     asterCorrectPicks = [];
@@ -48,6 +53,9 @@ function startGame() {
     document.getElementById("attemptsLeft").innerHTML = picksLeft;
     document.getElementById("winCounter").innerHTML = wins;
     document.getElementById("lossCounter").innerHTML = loss;
+    document.getElementById("cluePerson").innerHTML = clue;
+    document.getElementById("cluePerson1").innerHTML = clue;
+
     
 //END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTIONEND OF GAMESTART FUNCTION
 }

@@ -56,10 +56,6 @@ top: -50px;
 }
 
 
-.row {
-
-margin: 20px;
-}
 .row2 {
     position: relative;
     top: 20px;
@@ -67,7 +63,7 @@ margin: 20px;
     
 .col-4.main {
     background : grey;
-
+    background-image: url(../../assets/images/bg1.gif)
 }
 
 .passWord {
@@ -97,7 +93,7 @@ margin: 20px;
 }
 
 .row.row1 {
-    background: #3b5998;
+    background: grey;
 }
 
 #winCounter {
@@ -106,4 +102,12 @@ margin: 20px;
 
 #lossCounter {
     color: red;
+}
+
+h4 {
+    color: white;
+}
+
+h5 {
+    color: white;
 }

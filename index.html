@@ -19,9 +19,13 @@
 
             <form>
                     <div class="form-group1">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      <label for="exampleInputEmail1">Username:</label>
+                      <div class="container-fluid">
+                            <div class="content">
+                                 <h4><span id="cluePerson"></span></h4>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Password</label>
@@ -32,6 +36,8 @@
           </nav>
         <div class="jumbotron">
             <h4>Welcome to Hackbook</h4>
+            
+
         </div>
         <div class=container>
             <div class="row">
@@ -59,17 +65,12 @@
                                </div>
                            </div>
                         </div>
-                                    <div class="container-fluid">
-                                        <div class="content">
-                                             <h4> Successful Hacks :  <span id="winCounter"></span></h4>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="container-fluid">
-                                        <div class="content">
-                                             <h4>Failed Hacks : <span id="lossCounter"></span></h4>
-                                        </div>
-                                    </div>
+
+                        <div class="container-fluid">
+                                <div class="content">
+                                     <h4> You are Hacking :  <span id="cluePerson1"></span></h4>
+                                </div>
+                            </div>
                                 
                             </div>
                        </div>
@@ -78,7 +79,7 @@
                 
         
 
-                   <div class="row">
+                   <div class="row row1">
                    <div class="col-1"></div>
                    <div class="col-6">
                    <div class="container-fluid">
@@ -99,6 +100,28 @@
                     <div class="col-1"></div>
 
                    </div>
+                   <div class="row row1">
+                        <div class="col-1"></div>
+                        <div class="col-6">
+                   <div class="container-fluid">
+                        <div class="content">
+                             <h4> Successful Hacks :  <span id="winCounter"></span></h4>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-5">
+                    <div class="container-fluid">
+                        <div class="content">
+                             <h4>Failed Hacks : <span id="lossCounter"></span></h4>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+
+
+
                 </div>
 
 
