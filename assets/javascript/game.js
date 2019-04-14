@@ -2,6 +2,7 @@
 
 //
 var library = ["test1","test2","test3"];
+var namer = ["Morpheus" , "Cypher" , "Oracle" , "Neo" , "Trinity"]
 var lettersInPicked = [];
 var pickedWord = [];
 var numberOfAster = 0;
@@ -43,10 +44,11 @@ function startGame() {
 
 
     //after populating the pickedWord with number of asterisk  , set the game scores by modify the html file to reflect "game start"
+    document.getElementById("passWord").innerHTML = asterCorrectPicks.join("");
     document.getElementById("attemptsLeft").innerHTML = picksLeft;
     document.getElementById("winCounter").innerHTML = wins;
     document.getElementById("lossCounter").innerHTML = loss;
-
+    
 //END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTIONEND OF GAMESTART FUNCTION
 }
 
@@ -116,12 +118,16 @@ function roundChecker() {
 //Reset the html back to gamestart variables
     document.getElementById("attemptsLeft").innerHTML = picksLeft;
     document.getElementById("passWord").innerHTML = asterCorrectPicks.join("");
-    document.getElementByClass("passWord").innerHTML = asterCorrectPicks.join("");
-
+    document.getElementById("passWord").innerHTML = asterCorrectPicks.join("");
     document.getElementById("wrongLetters").innerHTML = wrongPicks.join("");
 }
 
-// Call the function , start the game 
+// Call the function , start the game
+
+var person = prompt("Please Enter Your Username");
+randomPrefix = namer[Math.floor(Math.random() * namer.length)];
+document.getElementById("userName").innerHTML = person + " aka " + randomPrefix;
+
 startGame();
 
 //Detect the key press . 
