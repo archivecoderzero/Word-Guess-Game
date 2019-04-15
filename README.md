@@ -1,6 +1,6 @@
 #Word-Guess-Game : HACKbook!
-To be deployed at :
-https://archivecoderzero.github.io/Word-Guess-Game/
+
+##To be deployed at : https://archivecoderzero.github.io/Word-Guess-Game/
 
 ### this is my Theme of the Homework that was given to us , a hacker theme where you guess people famous people password . The clue is the "Person you are hacking" ie ,"Tim Cook" , "Elon Musk" or "Barrack Obama" , the answers are words related to them , in this case the answers are "apple" (because Tim Cook founded Apple) , "tesla" because Elon Musk is the CEO of Tesla and "change" because of Obama's famous campaign line "CHANGE" . There are many nuances in the page ,3 worth mentioning (i spent hours figuring it out ) namely the "username" where it actually displays the persons name on Log-in and the "password" where it will emulate someone putting in a password thru the password form , and lastly , look for the "BONUS" word because it gives you 5 points...oh and one last thing......HAVE FUN!!!
 
