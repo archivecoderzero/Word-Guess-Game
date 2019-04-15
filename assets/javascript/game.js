@@ -1,9 +1,9 @@
 //Variables for the game :
 
 //
-var library = ["tesla","password","metalgear","apple" ,"popstar" ,"escapethefate","golf","qwerty" ,"ThiSisMypasswoRdz>" , "king"];
+var library = ["windows", "tesla","password","metalgear","apple" ,"popstar" ,"change","golf","qwerty" ,"bonus" , "king"];
 var namer = ["Morpheus" , "Cypher" , "Oracle" , "Neo" , "Trinity"]
-var clueUser = ["Elon Musk" , "Mark Zuckerburg", "Hideo Kojima" , "Tim Cook" , "Ariana Grande", "Ronnie Radke" , "Tiger Woods" , "Donald Trump","John R Chavez" , "Elvis Presley"]
+var clueUser = ["Bill Gates" , "Elon Musk" , "Mark Zuckerburg", "Hideo Kojima" , "Tim Cook" , "Ariana Grande", "Barrack Obama" , "Tiger Woods" , "Donald Trump","John R Chavez" , "Elvis Presley"]
 var asterisk = [];
 var lettersInPicked = [];
 var pickedWord = [];
@@ -13,6 +13,7 @@ var wrongPicks = [];
 var wins = 0;
 var loss = 0;
 var picksLeft = 10;
+
 
 
 //FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:FUNCTIONS HERE:
@@ -62,6 +63,39 @@ function startGame() {
     
 //END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTION END OF GAMESTART FUNCTIONEND OF GAMESTART FUNCTION
 }
+
+
+
+
+/////////
+
+function bonusChecker() { 
+
+    var bonusWord = asterCorrectPicks.join("") 
+    console.log(asterCorrectPicks.join("") )
+    //change the array lettersInPicked to a string , match that to blanksCorrectPick change that to string , if its equal, increment wins variable.   
+        if ("bonus" === bonusWord ) {
+            wins+10;
+    // Allert message that you win 
+            alert("BONUS TRIGGERED!")
+    //Update the win counter in HTML
+            document.getElementById("winCounter").innerHTML = wins;
+    //Rerun startgame function
+            startGame();
+        }
+    
+    //If picks left is equal to zero, alert you lose
+        else  {
+            roundChecker();
+        }
+    }
+
+
+
+
+
+
+///////
 
 // create a function to check when the user gives out an event "onkeyup" , a function checks if that (event) letter is matches a letter that is on the pickedWord
 function checker(letter) {
@@ -134,6 +168,33 @@ function roundChecker() {
     document.getElementById("wrongLetters").innerHTML = wrongPicks.join("");
 }
 
+
+function bonusChecker() { 
+
+    var bonusWord = asterCorrectPicks.join("") 
+    console.log(asterCorrectPicks.join("") )
+    //change the array lettersInPicked to a string , match that to blanksCorrectPick change that to string , if its equal, increment wins variable.   
+        if ("bonus" === bonusWord ) {
+            wins += 10;
+    // Allert message that you win 
+            alert("BONUS TRIGGERED! 10 points added!")
+    //Update the win counter in HTML
+            document.getElementById("winCounter").innerHTML = wins;
+    //Rerun startgame function
+            startGame();
+        }
+    
+    //If picks left is equal to zero, alert you lose
+        else  {
+            roundChecker();
+        }
+    }
+
+
+
+
+
+
 // Call the function , start the game
 
 var person = prompt("Please Enter Your Username");
@@ -146,6 +207,6 @@ startGame();
 document.onkeyup = function (event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checker(letterGuessed);
-    roundChecker();     
+    bonusChecker();
     asterisk.push("*");
       }
