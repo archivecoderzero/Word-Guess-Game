@@ -138,7 +138,7 @@ function roundChecker() {
 
 var person = prompt("Please Enter Your Username");
 randomPrefix = namer[Math.floor(Math.random() * namer.length)];
-document.getElementById("userName").innerHTML = person + " aka " + randomPrefix;
+document.getElementById("userName").innerHTML = person + " codename : " + randomPrefix;
 
 startGame();
 
