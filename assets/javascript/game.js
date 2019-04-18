@@ -1,9 +1,9 @@
 //Variables for the game :
 
 //
-var library = ["windows", "tesla","password","metalgear","apple" ,"popstar" ,"change","golf","qwerty" ,"bonus" , "king"];
-var namer = ["Morpheus" , "Cypher" , "Oracle" , "Neo" , "Trinity"]
-var clueUser = ["Bill Gates" , "Elon Musk" , "Mark Zuckerburg", "Hideo Kojima" , "Tim Cook" , "Ariana Grande", "Barrack Obama" , "Tiger Woods" , "Donald Trump","John R Chavez" , "Elvis Presley"]
+var library = ["neo","windows", "tesla","password","metalgear","apple" ,"victorious" ,"change","golf","qwerty" ,"bonus" , "king" , "breakup" ];
+var namer = ["Morpheus" , "Cypher" , "Oracle" , "Neo" , "Trinity" , "Hackerman" , "The Boss","The Techlead", "Techies", "Icedfrog", "Iron Man"]
+var clueUser = ["Keanu Reeves" ,"Bill  Gates" , "Elon  Musk" , "Mark Zuckerburg", "Hideo Kojima" , "Tim D Cook" , "Ariana Grande", "Barrack Obama" , "Tiger Woods" , "Donald Trump","John R Chavez" , "Elvis Presley" , "Taylor Swift"]
 var asterisk = [];
 var lettersInPicked = [];
 var pickedWord = [];
@@ -73,10 +73,10 @@ function bonusChecker() {
 
     var bonusWord = asterCorrectPicks.join("") 
     console.log(asterCorrectPicks.join("") )
-    //change the array lettersInPicked to a string , match that to blanksCorrectPick change that to string , if its equal, increment wins variable.   
-        if ("bonus" === bonusWord ) {
+// if the random word is the "bonus word " , the user wins 10 points
+    if ("bonus" === bonusWord || "neo" === bonusWord) {
             wins+10;
-    // Allert message that you win 
+    //alert BONUS TRIGGERD
             alert("BONUS TRIGGERED!")
     //Update the win counter in HTML
             document.getElementById("winCounter").innerHTML = wins;
@@ -84,16 +84,11 @@ function bonusChecker() {
             startGame();
         }
     
-    //If picks left is equal to zero, alert you lose
+    //if the bonus checker did not proc , run the round checker function
         else  {
             roundChecker();
         }
     }
-
-
-
-
-
 
 ///////
 
@@ -142,6 +137,8 @@ function roundChecker() {
 
 //change the array lettersInPicked to a string , match that to blanksCorrectPick change that to string , if its equal, increment wins variable.   
     if (lettersInPicked.toString() == asterCorrectPicks.toString()) {
+    console.log ("test1" + lettersInPicked.toString())
+    console.log ("test2" + asterCorrectPicks.toString())
         wins++;
 // Allert message that you win 
         alert("You Successfully Hacked " + clue )
@@ -153,7 +150,14 @@ function roundChecker() {
 
 //If picks left is equal to zero, alert you lose
     else if (picksLeft == 0) {
-        loss++;
+
+        if (wins>0){
+        wins--;
+        loss++}
+
+        else{
+        loss++}
+
         alert("You Failed to hack " + clue );
 
         document.getElementById("lossCounter").innerHTML = loss;
@@ -167,33 +171,6 @@ function roundChecker() {
     document.getElementById("passWord1").innerHTML = asterisk.join("");
     document.getElementById("wrongLetters").innerHTML = wrongPicks.join("");
 }
-
-
-function bonusChecker() { 
-
-    var bonusWord = asterCorrectPicks.join("") 
-    console.log(asterCorrectPicks.join("") )
-    //change the array lettersInPicked to a string , match that to blanksCorrectPick change that to string , if its equal, increment wins variable.   
-        if ("bonus" === bonusWord ) {
-            wins += 10;
-    // Allert message that you win 
-            alert("BONUS TRIGGERED! 10 points added!")
-    //Update the win counter in HTML
-            document.getElementById("winCounter").innerHTML = wins;
-    //Rerun startgame function
-            startGame();
-        }
-    
-    //If picks left is equal to zero, alert you lose
-        else  {
-            roundChecker();
-        }
-    }
-
-
-
-
-
 
 // Call the function , start the game
 
