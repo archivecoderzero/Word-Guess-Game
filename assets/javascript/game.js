@@ -151,6 +151,7 @@ function roundChecker() {
 //If picks left is equal to zero, alert you lose
     else if (picksLeft == 0) {
 
+        // added game mechanic , when user mis picks a word , it deducts a point from their wins , if the wins is > 0
         if (wins>0){
         wins--;
         loss++}

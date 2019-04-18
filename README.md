@@ -26,7 +26,18 @@
  
 >Minor word and clue changes .
 
-### No copyright, feel free to change or improve this "framework" .
+##Version 1.6
+> Fixed footer to stick to the bottom , when screen size is changed.
+
+> Fixed short names showing the underlying element of the "clue1" on html file
+
+> Added game mechanic if user did not guess the right word, it will deduct 1 point "IF" the user wins is >0 point , so the win score wont go to -1.
+
+> changed Ariana Grande to "victorios" . added more words, cuz it kept repeating the same word
+
+> on later versions, i will add a function to not repick the same word 
+
+### NOTE : No copyright, feel free to change or improve this "framework" , 
 
 
 
