@@ -4,11 +4,11 @@
 
 ### this is my Theme of the Homework that was given to us , a hacker theme where you guess people famous people password . The clue is the "Person you are hacking" ie ,"Tim Cook" , "Elon Musk" or "Barrack Obama" , the answers are words related to them , in this case the answers are "apple" (because Tim Cook founded Apple) , "tesla" because Elon Musk is the CEO of Tesla and "change" because of Obama's famous campaign line "CHANGE" . There are many nuances in the page ,3 worth mentioning (i spent hours figuring it out ) namely the "username" where it actually displays the persons name on Log-in and the "password" where it will emulate someone putting in a password thru the password form , and lastly , look for the "BONUS" word because it gives you 5 points...oh and one last thing......HAVE FUN!!!
 
-##Version 0.1
+## Version 0.1
 >psuedocoded and researched the net to have an insight on how to tackle this problem 
 
 
-##Version 0.5
+## Version 0.5
 >coded basic HTML layout and theme
 
 
@@ -17,7 +17,7 @@
 
 >Added animation for the "password" form , so it looks like you are puting a real password on it, **check it out!**
 
-##Version 1.5
+## Version 1.5
 >Implemented overflow hidden in HTML so that the animation wont push the navbar header . 
 
 >Minor cosmetic changes 
@@ -26,7 +26,7 @@
  
 >Minor word and clue changes .
 
-##Version 1.6
+## Version 1.6
 > Fixed footer to stick to the bottom , when screen size is changed.
 
 > Fixed short names showing the underlying element of the "clue1" on html file
@@ -37,7 +37,17 @@
 
 > on later versions, i will add a function to not repick the same word 
 
-### NOTE : No copyright, feel free to change or improve this "framework" , 
+
+## Version 2.0 04/21/19
+> Added a function so that it would not repeat words Over and over and over again , once you guessed the password, you wont have to guess it again.
+
+> Replaced some passwords..
+
+> minor cosmetic updates
+
+> check out the Console to see how the unRepeat function works . cuz i think its cool ... (im proud of it :)
+
+### NOTE : No copyright, feel free to change or improve this "framework" fellow "hackers" :) , 
 
 
 

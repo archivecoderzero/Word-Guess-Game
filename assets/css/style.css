@@ -1,171 +1,164 @@
 .jumbotron {
-    background : #3b5998;
-    color : white;
-    z-index: -1;
-    position: relative;
-    top: -70px;
-    width: 100%;
-    height: 30px;
+	background: #3b5998;
+	color: white;
+	z-index: -1;
+	position: relative;
+	top: -70px;
+	width: 100%;
+	height: 30px;
 }
 
 body {
-    background : #8b9dc3;
-
+	background: #8b9dc3;
 }
 
 .row {
-position: relative;
-top: -50px;
+	position: relative;
+	top: -50px;
 }
-
-
 
 .navbar {
-    background-color: #3b5998;
-    background-image : url(../../assets/images/3.png);
-    font-weight : 700;
-    color: white;
-
+	background-color: #3b5998;
+	background-image: url(../../assets/images/3.png);
+	font-weight: 700;
+	color: white;
 }
 
-.navbar-brand{
-    color: white;
+.navbar-brand {
+	color: white;
 }
 
-.form-group1{
-    float: left;
-    position: relative;
-    right: 50px;.
-    color: white;
+.form-group1 {
+	float: left;
+	position: relative;
+	right: 50px;
+	. color: white;
 }
-.form-group{
-    float: left;
-    position: relative;
-    right: 20px
+
+.form-group {
+	float: left;
+	position: relative;
+	right: 20px
 }
 
 .btn.btn-success {
-    clear: both;
-    position: relative;
-    top: 30px;
+	clear: both;
+	position: relative;
+	top: 30px;
 }
 
-
 .row2 {
-    position: relative;
-    top: 20px;
-    }
-    
+	position: relative;
+	top: 20px;
+}
+
 .col-5.main {
-    background : grey;
-    background-image: url(../../assets/images/bg1.gif)
+	background: grey;
+	background-image: url(../../assets/images/bg1.gif)
 }
 
 .passWord {
-    padding: 10px;
-    background: white;
+	padding: 10px;
+	background: white;
 }
 
 .footer {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-
-    }
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
 
 #userName {
-    color: rgb(109, 255, 72);
+	color: rgb(109, 255, 72);
 }
 
 .row.row1 {
-    background: grey;
+	background: grey;
 }
 
 #winCounter {
-    color: limegreen;
+	color: limegreen;
 }
 
 #lossCounter {
-    color: red;
+	color: red;
 }
 
 h4 {
-    color: white;
+	color: white;
 }
 
 h5 {
-    color: white;
+	color: white;
 }
 
 #cluePerson {
-    padding: 5px 30px 5px 5px;
-    background: white;
-    color: black;
-    position: relative;
-    bottom: 60px;
-    font-weight: 600;
-    font-size: 15px;
+	padding: 5px 30px 5px 5px;
+	background: white;
+	color: black;
+	position: relative;
+	bottom: 60px;
+	font-weight: 600;
+	font-size: 15px;
 }
 
 .header {
-    position: absolute;
-
+	position: absolute;
 }
 
-
 .container.cont {
-   position: relative;
-   top: -35px;
+	position: relative;
+	top: -35px;
 }
 
 #passWord1 {
-    padding: 5px 70px 5px 8px;
-    background: white;
-    color: black;
-    position: relative;
-    bottom: 35px;
-    left: 10px;
-    font-weight: 600;
-    font-size: 15px;
-    max-width: 10px;
-    overflow: hidden;
-
+	padding: 5px 70px 5px 8px;
+	background: white;
+	color: black;
+	position: relative;
+	bottom: 35px;
+	left: 10px;
+	font-weight: 600;
+	font-size: 15px;
+	max-width: 10px;
+	overflow: hidden;
 }
 
 .restrainer {
-    max-width: 10px;
-    overflow: hidden;
+	max-width: 10px;
+	overflow: hidden;
 }
 
 .welcome {
-    position: absolute;
+	position: absolute;
 }
+
 .aaa {
-    float: right;
+	float: right;
 }
 
 #cluePerson1 {
-    color: rgb(255, 252, 101);
-    text-decoration: underline;
-
+	color: rgb(255, 252, 101);
+	text-decoration: underline;
 }
 
 .sometext {
-    color:lightskyblue;
+	color: lightskyblue;
 }
 
 .footercont {
-    background: #3b5998;
-    grid-row-start: 10;
-    grid-row-end: 11;
+	background: #3b5998;
+	grid-row-start: 10;
+	grid-row-end: 11;
+	width: 100%
 }
 
 html {
-    height: 100%;
-  }
+	height: 100%;
+}
 
 body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
-  }
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
